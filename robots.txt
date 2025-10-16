@@ -1,2 +1,4 @@
 User-agent: *
 Disallow: /academic/
+Disallow: /offer-softbank.html
+Disallow: /assets/img/softbank-offer/
