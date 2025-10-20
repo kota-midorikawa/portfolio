@@ -4,26 +4,37 @@
   <meta charset="utf-8" />
   <title>内定通知書（ソフトバンク株式会社）</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- 検索避け -->
-  <meta name="robots" content="noindex, noimageindex, noarchive, nosnippet">
+  <!-- 検索避け（二重化：robots.txt と合わせて運用） -->
+  <meta name="robots" content="noindex,noimageindex,noarchive,nosnippet">
+  <link rel="canonical" href="https://kota-midorikawa.github.io/portfolio/">
   <style>
-    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", sans-serif; margin: 24px; line-height: 1.7; }
+    body { font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans JP",sans-serif;
+           max-width: 920px; margin: 40px auto; padding: 0 16px; line-height: 1.7; }
+    a.button { display:inline-block; padding:10px 14px; border-radius:10px; border:1px solid #444; text-decoration:none; }
     .hero { display:flex; gap:16px; align-items:center; margin-bottom: 12px; }
     .hero img { max-height: 72px; border: 1px solid #ddd; }
     figure { margin: 24px 0; }
     figcaption { color: #666; font-size: 0.9rem; }
     code { background:#f5f5f5; padding:2px 4px; border-radius:4px; }
-    .disclaimer { font-size: 0.9rem; color:#555; background:#fafafa; padding:12px; border-left:4px solid #999; }
-    .thumb { max-width: 460px; border:1px solid #ddd; }
+    .disclaimer { font-size: 0.9rem; color:#555; background:#fafafa; padding:12px; border-left:4px solid #999; border-radius:6px; }
+    .thumb { max-width: 460px; width:100%; border:1px solid #ddd; }
     .doc { max-width: 1100px; width: 100%; border:1px solid #ddd; }
+    .foot { color:#777; font-size:.95rem; margin-top: 22px; }
+    @media print {
+      a.button { display:none; }
+      .disclaimer { border:none; background:transparent; }
+      body { margin: 0; }
+    }
   </style>
 </head>
 <body>
+  <p><a href="./">← Back to Portfolio</a></p>
+
   <header>
-    <h1>内定通知書（黒塗り公開）</h1>
+    <h1>内定通知書（黒塗り）</h1>
     <p class="disclaimer">
-      本ページは採用選考における事実確認のみを目的とした<strong>限定的公開</strong>です。<br>
-      画像は全て<strong>黒塗り済み</strong>で、PDF原本は一般公開していません。二次利用・再配布はご遠慮ください。
+      本ページは採用選考等における事実確認を目的とした<strong>限定公開</strong>です。<br>
+      画像はすべて<strong>黒塗り済み</strong>で、原本PDFは一般公開しません。
     </p>
   </header>
 
@@ -34,20 +45,21 @@
       <li><strong>検証用ハッシュ（原本PDFのSHA-256）：</strong>
         <code>a2781f84e14e4aee1b1354de59e0aec626d6d1daf1a10d924025117e509cf576</code>
       </li>
-      <li>原本PDFは個別依頼にて提示可能（採用関係者向け）。</li>
+      <li>原本PDFは個別依頼にて提示可能。</li>
     </ul>
+
     <!-- 任意：職種行の抜粋タイル（ある場合のみ） -->
     <figure>
-      <img src="assets/img/softbank-offer/sb-offer-role.png" alt="Role line" class="thumb">
+      <img src="assets/img/softbank-offer/sb-offer-role.png" alt="区分行の抜粋（黒塗り済み）" class="thumb">
       <figcaption>区分行の抜粋</figcaption>
     </figure>
   </section>
 
   <section>
-    <h2>黒塗り版（画像化）</h2>
+    <h2>画像化</h2>
     <figure>
-      <img src="assets/img/softbank-offer/redacted.png" alt="Offer (redacted)" class="doc">
-      <figcaption>内定通知書 1ページ目（黒塗り・画像化）</figcaption>
+      <img src="assets/img/softbank-offer/redacted.png" alt="内定通知書（黒塗り・1ページ目の画像化）" class="doc">
+      <figcaption>内定通知書 1ページ目</figcaption>
     </figure>
   </section>
 
@@ -56,12 +68,11 @@
     <ul>
       <li>目的：採用・職歴確認のみ</li>
       <li>転載・再配布：不可</li>
-      <li>追加確認：原本PDFの提示は個別依頼ベース</li>
     </ul>
   </section>
 
-  <footer>
-    <p>© Kota Midorikawa — Portfolio verification page.</p>
+  <footer class="foot">
+    © Kota Midorikawa — Portfolio verification page. Last updated: 2025-10-20
   </footer>
 </body>
 </html>
