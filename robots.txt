@@ -2,3 +2,6 @@ User-agent: *
 Disallow: /academic/
 Disallow: /offer-softbank.html
 Disallow: /assets/img/softbank-offer/
+Disallow: /offer-consult-2023.html
+Disallow: /assets/img/offer-consult-2023/
+Disallow: /assets/doc/offer-consult-2023-redacted.pdf
