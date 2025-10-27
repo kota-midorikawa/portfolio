@@ -11,13 +11,21 @@
     .card { border:1px solid #ddd; border-radius:14px; padding:18px 20px; margin:14px 0; }
     a.button { display:inline-block; padding:10px 14px; border-radius:10px; border:1px solid #444; text-decoration:none; }
     code { background:#f6f6f6; padding: 2px 6px; border-radius:6px; }
+    .topnav { margin: 10px 0 20px; display:flex; gap:10px; flex-wrap:wrap; }
   </style>
 </head>
 <body>
   <h1>Academic — Transcripts</h1>
   <p>Sanitized / watermarked materials for application screening. Originals are kept private.</p>
 
-  <div class="card">
+  <!-- Optional quick nav -->
+  <div class="topnav">
+    <a class="button" href="#masters">Master’s</a>
+    <a class="button" href="#bachelors">Bachelor’s</a>
+    <a class="button" href="../">Back to portfolio</a>
+  </div>
+
+  <div class="card" id="masters">
     <h2>Master’s (The University of Tokyo)</h2>
     <p>Masked & watermarked transcript (PII and machine-readable codes removed/obscured).</p>
     <p>
@@ -26,10 +34,11 @@
     <p><code>SHA-256</code> f993fc96640cceae7289d893d44c41c0b6c3ab704025da8028bf83fcec182006</p>
   </div>
 
-  <div class="card">
+  <div class="card" id="bachelors">
     <h2>Bachelor’s (Gakushuin University)</h2>
     <p>Summary page with GPA 3.045 and representative courses. Masked PDF available if needed.</p>
     <p>
+      <!-- サマリーのみなら academic/ に別HTMLを用意してもOK。PDFがあるなら下記のように直リンクでも。 -->
       <a class="button" href="gakushuin/Bachelor_Transcript.pdf" target="_blank" rel="noopener">Open masked transcript (PDF)</a>
     </p>
   </div>
