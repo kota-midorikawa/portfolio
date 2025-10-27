@@ -4,48 +4,71 @@
   <meta charset="utf-8" />
   <title>Academic — 学部成績サマリー｜Kota Midorikawa</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="robots" content="noindex,nofollow" />
+  <meta name="robots" content="noindex,noarchive,noimageindex" />
   <style>
-    body{font-family:system-ui, -apple-system, Segoe UI, Roboto, Noto Sans JP, sans-serif; line-height:1.7; max-width:880px; margin:48px auto; padding:0 16px;}
-    h1{margin-bottom:8px}
-    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:16px 0 24px}
-    .card{border:1px solid #eee;padding:12px;border-radius:12px}
-    table{border-collapse:collapse;width:100%;margin-top:8px}
-    th,td{border:1px solid #e6e6e6;padding:8px;text-align:left}
-    .note{color:#666;font-size:0.9em}
-    .btn{display:inline-block;padding:10px 14px;border:1px solid #ddd;border-radius:10px;text-decoration:none}
+    :root { --maxw: 880px; }
+    body{
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans JP", "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+      line-height: 1.7; max-width: var(--maxw); margin: 48px auto; padding: 0 16px;
+    }
+    h1{ margin: 0 0 8px }
+    .note{ color:#666; font-size:0.9em; margin: 4px 0 16px }
+    .topnav{ display:flex; gap:10px; flex-wrap:wrap; margin: 6px 0 18px }
+    .btn{ display:inline-block; padding:10px 14px; border:1px solid #ddd; border-radius:10px; text-decoration:none }
+    .cards{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:12px; margin:16px 0 24px }
+    .card{ border:1px solid #eee; padding:12px; border-radius:12px }
+    table{ border-collapse:collapse; width:100%; margin-top:8px }
+    caption{ text-align:left; color:#555; font-size:0.95em; margin: 0 0 6px }
+    th,td{ border:1px solid #e6e6e6; padding:8px; text-align:left }
+    th[scope="row"]{ background:#fafafa; white-space:nowrap }
+    code{ background:#f6f6f6; padding:2px 6px; border-radius:6px }
+    .foot{ color:#777; font-size:0.92em; margin-top: 20px }
   </style>
 </head>
 <body>
   <h1>学部成績サマリー（理学部 物理学科）</h1>
-  <p class="note">※ このページは採用向け補足資料です。個人情報・印影等マスキング済みPDFのみ公開。</p>
+  <p class="note">※ このページは採用向け補足資料です。個人情報・印影等マスキング済みPDFのみ公開します。</p>
 
-  <div class="cards">
+  <div class="topnav">
+    <a class="btn" href="../" rel="noopener">← Academic 一覧へ</a>
+    <a class="btn" href="../../" rel="noopener">← Portfolio へ戻る</a>
+  </div>
+
+  <div class="cards" aria-label="基本情報">
     <div class="card"><strong>大学</strong><br>学習院大学 理学部 物理学科</div>
+    <!-- 追加したい情報があればカードを増やしてください -->
   </div>
 
   <h2>取得単位（内訳）</h2>
   <table>
-    <thead><tr><th>区分</th><th>単位数</th><th>備考</th></tr></thead>
+    <caption>最終版の単位集計（学内様式に準拠）</caption>
+    <thead>
+      <tr><th>区分</th><th>単位数</th><th>備考</th></tr>
+    </thead>
     <tbody>
-      <tr><td>必修</td><td>102</td><td></td></tr>
-      <tr><td>選択</td><td>30</td><td></td></tr>
-      <tr><td>教職 等</td><td>8</td><td></td></tr>
-      <tr><td><strong>合計</strong></td><td><strong>140</strong></td><td></td></tr>
+      <tr><th scope="row">必修</th><td>102</td><td></td></tr>
+      <tr><th scope="row">選択</th><td>30</td><td></td></tr>
+      <tr><th scope="row">教職 等</th><td>8</td><td></td></tr>
+      <tr><th scope="row"><strong>合計</strong></th><td><strong>140</strong></td><td></td></tr>
     </tbody>
   </table>
 
   <h2>主な履修分野・科目例</h2>
   <ul>
     <li>解析力学／電磁気学／量子力学／熱・統計／物性 など</li>
-    <!-- 必要に合わせて追記 -->
+    <!-- 必要に応じて追加 -->
   </ul>
 
+  <h2 id="pdf">マスク済みPDF</h2>
+  <p class="note">機械可読コード・個人情報等はマスキング済みの公開用PDFです。</p>
   <p>
-    <a class="btn" href="./Transcript_Bachelor.pdf" target="_blank" rel="noopener nofollow">
-      PDFを開く
-    </a>
+    <a class="btn" href="./Bachelor_Transcript.pdf" target="_blank" rel="noopener nofollow">PDFを開く</a>
+    <!-- 既存が Transcript_Bachelor.pdf なら上記 href を置換 -->
+  </p>
+  <p class="note">
+    <code>SHA-256</code> 例: <code>（ここに後で計算したハッシュ値を記載）</code>
   </p>
 
+  <div class="foot">最終更新日: 2025-10-27</div>
 </body>
 </html>
